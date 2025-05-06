@@ -16,7 +16,11 @@
       font-weight: bold;
       color: #0071c2;
       text-align: center;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+      h1 {
+        text-shadow: 2px 2px 4px rgba(241, 235, 235, 0.826);
+      }
 
       h2 {
         // background: linear-gradient(90deg, #C96A72 2.52%, #AFDAA4 50.27%, #C96971 89.21%);
