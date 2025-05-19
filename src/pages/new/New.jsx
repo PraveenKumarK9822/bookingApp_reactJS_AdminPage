@@ -19,17 +19,19 @@ const New = ({ inputs, title }) => {
     data.append("file", file);
     data.append("upload_preset", "upload");
     try {
+      ///logined with GITHUB details
       const res = await axios.post(
-        "https://api.cloudinary.com/v1_1/dadadev/image/upload", data
+        "https://api.cloudinary.com/v1_1/dadadev/image/upload",
+        data
       );
       const { url } = res.data;
       const newUser = { ...info, img: url };
       await axios.post("/auth/register", newUser);
-    } catch(error) {
+    } catch (error) {
       console.error("Error uploading file:", error);
     }
   };
-  console.log(info)
+  console.log(info);
 
   return (
     <div className="new">

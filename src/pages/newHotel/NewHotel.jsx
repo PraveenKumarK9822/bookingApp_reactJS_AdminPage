@@ -35,6 +35,7 @@ const NewHotel = () => {
           const data = new FormData();
           data.append("file", file);
           data.append("upload_preset", "upload");
+          ///logined with GITHUB details
           const res = await axios.post(
             "https://api.cloudinary.com/v1_1/dadadev/image/upload",
             data
